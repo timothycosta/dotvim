@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/Users/timothycosta/Desktop/activities/iLingQ/fastlane'
+let g:netrw_dirhist_2='/Users/timothycosta/Desktop/activities/iLingQ/fastlane/es'
+let g:netrw_dirhist_3='/Users/timothycosta/Desktop/activities/iLingQ/fastlane/es/review_information'
+let g:netrw_dirhist_4='/Users/timothycosta/Desktop/activities/iLingQ/fastlane/es'
+let g:netrw_dirhist_5='/Users/timothycosta/Desktop/activities/iLingQ/fastlane'
+let g:netrw_dirhist_6='/Users/timothycosta/Desktop/lingq/iLingQ'
