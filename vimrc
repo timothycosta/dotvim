@@ -5,6 +5,7 @@ Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'vim-syntastic/syntastic'
 Plug 'keith/swift.vim'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'tpope/vim-fugitive'
 call plug#end()
 
 " Syntastic
