@@ -2,20 +2,18 @@
 call plug#begin('~/.vim/plugged')
 " Plugins
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-Plug 'vim-syntastic/syntastic'
-Plug 'keith/swift.vim'
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'tpope/vim-fugitive'
 call plug#end()
 
 " Syntastic
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+" set statusline+=%#warningmsg#
+" set statusline+=%{SyntasticStatuslineFlag()}
+" set statusline+=%*
+" set statusline+=%F
+" let g:syntastic_always_populate_loc_list = 1
+" let g:syntastic_auto_loc_list = 1
+" let g:syntastic_check_on_open = 1
+" let g:syntastic_check_on_wq = 0
 
 syntax on
 
@@ -32,6 +30,7 @@ set mouse=a
 set ignorecase
 set background=dark
 set number relativenumber
+set nowrap
 
 augroup numbertoggle
   autocmd!
@@ -57,3 +56,4 @@ nnoremap <Down> ddp
 " Change tabs
 nnoremap <Tab> :tabn<CR>
 nnoremap <S-Tab> :tabp<CR>
+nnoremap <C-i> i_<ESC>
