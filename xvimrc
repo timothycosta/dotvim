@@ -1,0 +1,41 @@
+set ignorecase
+set hlsearch
+set clipboard=unnamed
+set relativenumber
+
+" 'Edit from end
+nnoremap <Space>e ea
+nnoremap <Space>E Ea
+" 'Insert single character
+nnoremap <Space>i i_<ESC>r
+" 'Comment line out/in
+nnoremap <Space>/ 0i//<ESC>
+nnoremap <Space>\ 0xx
+" 'Start/end comment block
+nnoremap <Space>* 0i/*<ESC>
+nnoremap <Space>** 0i*/<ESC>
+" Easier scroll
+nnoremap J 3<C-e>
+nnoremap K 3<C-y>
+" Replace original functions from above
+nnoremap <leader>J J
+nnoremap <leader>K K
+" Newline above/below
+nnoremap <CR> o<ESC>
+nnoremap <S-Enter> O<ESC>
+" Window split movement
+nnoremap <C-j> <C-W>j
+nnoremap <C-k> <C-W>k
+nnoremap <C-l> <C-W>l
+nnoremap <C-h> <C-W>h
+" Tab switching
+nnoremap <Tab> :tabn<CR>
+nnoremap <S-Tab> :tabp<CR>
+" Insert a single character
+nnoremap <C-i> i_<ESC>
+" Re-highlight after yank
+vnoremap y ygv
+
+" Xcode keymappings
+nnoremap <space>b :xccmd toggleBreakpointAtCurrentLine<CR>
+nnoremap <space>c :xccmd commentAndUncommentCurrentLines<CR>
