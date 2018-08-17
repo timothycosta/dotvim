@@ -3,17 +3,21 @@ set hlsearch
 set clipboard=unnamed
 set relativenumber
 
-" 'Edit from end
+" Edit from end
 nnoremap <Space>e ea
 nnoremap <Space>E Ea
-" 'Insert single character
+" Insert single character
 nnoremap <Space>i i_<ESC>r
-" 'Comment line out/in
+" Comment line out/in
 nnoremap <Space>/ 0i//<ESC>
 nnoremap <Space>\ 0xx
-" 'Start/end comment block
+" Start/end comment block
 nnoremap <Space>* 0i/*<ESC>
 nnoremap <Space>** 0i*/<ESC>
+" Easier black hole
+nnoremap <Space>_ "_
+" Easier undo
+nnoremap U <C-r>
 " Easier scroll
 nnoremap J 3<C-e>
 nnoremap K 3<C-y>
@@ -28,6 +32,8 @@ nnoremap <C-j> <C-W>j
 nnoremap <C-k> <C-W>k
 nnoremap <C-l> <C-W>l
 nnoremap <C-h> <C-W>h
+" Delete without copy
+nnoremap d_ "_dd
 " Tab switching
 nnoremap <Tab> :tabn<CR>
 nnoremap <S-Tab> :tabp<CR>

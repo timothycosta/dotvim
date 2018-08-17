@@ -34,6 +34,7 @@ set nowrap
 set clipboard=unnamed
 
 set number
+" This ended up being annoying
 " augroup numbertoggle
 "   autocmd!
 "   autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
@@ -51,6 +52,11 @@ nnoremap <leader>ev $MYVIMRC<CR>
 nnoremap <leader>ws :w<CR>:source %<CR>
 " 'Quit all windows'
 nnoremap <leader>q :qa<CR>
+" Easier black hole
+nnoremap <leader>_ "_
+" Edit from end
+nnoremap <leader>e ea
+nnoremap <leader>E Ea
 " Easier scroll
 nnoremap J 3
 nnoremap K 3
