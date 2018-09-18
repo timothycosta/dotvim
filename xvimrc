@@ -16,6 +16,11 @@ nnoremap <Space>* 0i/*<ESC>
 nnoremap <Space>** 0i*/<ESC>
 " Easier black hole
 nnoremap <Space>_ "_
+nnoremap c "_c
+nnoremap d "_d
+nnoremap D "_D
+nnoremap <Space>d d
+nnoremap <Space>D D
 " Easier undo
 nnoremap U <C-r>
 " Easier scroll
