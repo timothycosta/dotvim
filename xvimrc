@@ -11,6 +11,8 @@ nnoremap <Space>i i_<ESC>r
 " Comment line out/in
 nnoremap <Space>/ 0i//<ESC>
 nnoremap <Space>\ 0xx
+" Add ; to end of line
+nnoremap <Space>; A;<ESC>
 " Start/end comment block
 nnoremap <Space>* 0i/*<ESC>
 nnoremap <Space>** 0i*/<ESC>
