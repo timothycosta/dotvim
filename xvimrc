@@ -1,3 +1,4 @@
+set im
 set ignorecase
 set hlsearch
 set clipboard=unnamed
@@ -10,14 +11,21 @@ nnoremap <Space>E Ea
 nnoremap <Space>i i_<ESC>r
 " Comment line out/in
 nnoremap <Space>/ 0i//<ESC>
-nnoremap <Space>\ 0xx
+nnoremap <Space>\ 02x
 " Add ; to end of line
 nnoremap <Space>; A;<ESC>
+nnoremap <Space>/ I//<ESC>
+nnoremap <Space>\ I<ESC>l2x
 " Start/end comment block
 nnoremap <Space>* 0i/*<ESC>
 nnoremap <Space>** 0i*/<ESC>
 " Easier black hole
 nnoremap <Space>_ "_
+nnoremap c "_c
+nnoremap d "_d
+nnoremap D "_D
+nnoremap <Space>d d
+nnoremap <Space>D D
 " Easier undo
 nnoremap U <C-r>
 " Easier scroll
@@ -36,13 +44,14 @@ nnoremap <C-l> <C-W>l
 nnoremap <C-h> <C-W>h
 " Delete without copy
 nnoremap d_ "_dd
-" Tab switching
-nnoremap <Tab> :tabn<CR>
-nnoremap <S-Tab> :tabp<CR>
 " Insert a single character
 nnoremap <C-i> i_<ESC>
+" Jump to center after search
+nnoremap n nzz
 " Re-highlight after yank
 vnoremap y ygv
+nnoremap p 0p
+nnoremap P 0P
 
 " Xcode keymappings
 nnoremap <space>b :xccmd toggleBreakpointAtCurrentLine<CR>

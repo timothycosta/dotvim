@@ -1,7 +1,8 @@
 " https://github.com/junegunn/vim-plug
 call plug#begin('~/.vim/plugged')
 " Plugins
-Plug 'crusoexia/vim-monokai'
+Plug 'jaxbot/semantic-highlight.vim'
+" Plug 'crusoexia/vim-monokai'
 Plug 'keith/swift.vim'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'ctrlpvim/ctrlp.vim'
@@ -83,3 +84,6 @@ nnoremap <C-i> i_<ESC>
 cnoremap qq q<CR>
 " Re-select after yanking
 vnoremap y ygv
+nnoremap <leader>sem :SemanticHighlightToggle<CR>
+" Center searched text
+nnoremap n nzz
